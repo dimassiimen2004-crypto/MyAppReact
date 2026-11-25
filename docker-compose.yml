@@ -6,7 +6,7 @@ services:
       - mern-network
 
   server:
-    build: ./Server
+    build: ./server
     container_name: server
     ports:
       - "9000:9000"
@@ -18,7 +18,7 @@ services:
       - mern-network
 
   client:
-    build: ./Client
+    build: ./client
     container_name: client
     ports:
       - "3000:3000"
